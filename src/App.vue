@@ -1,28 +1,29 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="container-fluid">
+    <Filters></Filters>
+    <Paginate></Paginate>
+    <Player></Player>
+    <Paginate></Paginate>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Paginate from './components/Paginate.vue'
+import Player from './components/Player.vue'
+import Filters from './components/Filters.vue'
+
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Paginate,
+    Player,
+    Filters
   }
 }
 </script>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss" scoped>
+  
 </style>
+
